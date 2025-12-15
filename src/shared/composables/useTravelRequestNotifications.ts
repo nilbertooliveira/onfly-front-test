@@ -21,7 +21,6 @@ export function useTravelRequestNotifications() {
             return
         }
 
-        EchoService.initialize()
         EchoService.listenTravelRequestChanges(userId, (event) => {
             console.log('Notificação recebida:', event)
             notifications.value.push(event)

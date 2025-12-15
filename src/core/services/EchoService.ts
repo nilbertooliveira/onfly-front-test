@@ -64,7 +64,7 @@ class EchoService {
 
         this.echo
             .private(`private-user.${userId}`)
-            .listen('TravelRequestStatusChanged', (event: any) => {
+            .listen('.TravelRequestStatusChanged', (event: any) => {
                 const payload: Notification = {
                     travelRequestId: event.travelRequestId,
                     status: event.status,

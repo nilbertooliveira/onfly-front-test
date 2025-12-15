@@ -37,6 +37,13 @@ export default defineConfig({
             }
         }
     },
+    build: {
+        sourcemap: true,
+        minify: false,
+    },
+    css: {
+        devSourcemap: true
+    },
     server: {
         host: true,
         port: 5173
